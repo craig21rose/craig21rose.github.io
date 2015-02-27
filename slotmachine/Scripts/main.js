@@ -284,8 +284,9 @@ function spinButtonClicked(event) {
     //Informs player they have run out of money, resets game.
     if (playerMoney <= 0) {
         if (confirm("You ran out of Money! \nDo you want to play again?")) {
-            resetButtonClicked();
+            
         }
+        resetButtonClicked();
     }
     // Informs player they have not bet money.
     else if (betAmount == 0)
