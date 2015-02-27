@@ -136,7 +136,7 @@ function Reels() {
         outCome[spin] = Math.floor((Math.random() * 65) + 1);
         switch (outCome[spin]) {
             case checkRange(outCome[spin], 1, 27):  // 41.5% probability
-                betLine[spin] = "Watermelon";
+                betLine[spin] = "watermelon";
                 watermelon++;
                 if (watermelon == 3) {
                         playerMoney = playerMoney += betAmount * 5;
@@ -152,7 +152,7 @@ function Reels() {
                     }
                 break;
             case checkRange(outCome[spin], 28, 37): // 15.4% probability
-                betLine[spin] = "Grapes";
+                betLine[spin] = "grapes";
                 grapes++;
                 if (grapes == 3){
                 playerMoney = playerMoney += betAmount * 10;
@@ -168,7 +168,7 @@ function Reels() {
                 }
                 break;
             case checkRange(outCome[spin], 38, 46): // 13.8% probability
-                betLine[spin] = "Banana";
+                betLine[spin] = "banana";
                 bananas++;
                 if (bananas == 3) {
                     playerMoney = playerMoney += betAmount * 20;
@@ -185,7 +185,7 @@ function Reels() {
                 }
                 break;
             case checkRange(outCome[spin], 47, 54): // 12.3% probability
-                betLine[spin] = "Orange";
+                betLine[spin] = "orange";
                 oranges++;
                 if (oranges == 3) {
                     playerMoney = playerMoney += betAmount * 30;
@@ -202,7 +202,7 @@ function Reels() {
                 }
                 break;
             case checkRange(outCome[spin], 55, 59): //  7.7% probability
-                betLine[spin] = "Cherry";
+                betLine[spin] = "cherry";
                 cherries++;
                 if (cherries == 3) {
                     playerMoney = playerMoney += betAmount * 40;
@@ -219,7 +219,7 @@ function Reels() {
                 }
                 break;
             case checkRange(outCome[spin], 60, 62): //  4.6% probability
-                betLine[spin] = "Bar";
+                betLine[spin] = "bar";
                 bars++;
                 if (bars == 3) {
                     alert("You Won the $" + jackpot + " Jackpot!!");
@@ -231,7 +231,7 @@ function Reels() {
                 }
                 break;
             case checkRange(outCome[spin], 63, 64): //  3.1% probability
-                betLine[spin] = "Bell";
+                betLine[spin] = "bell";
                 bells++;
                 if (bells == 3) {
                     playerMoney = playerMoney += betAmount * 75;
@@ -248,7 +248,7 @@ function Reels() {
                 }
                 break;
             case checkRange(outCome[spin], 65, 65): //  1.5% probability
-                betLine[spin] = "Seven";
+                betLine[spin] = "seven";
                 sevens++;
                 if (sevens == 3) {
                     playerMoney = playerMoney += betAmount * 100;
