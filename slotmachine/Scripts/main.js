@@ -136,90 +136,71 @@ function Reels() {
         outCome[spin] = Math.floor((Math.random() * 65) + 1);
         switch (outCome[spin]) {
             case checkRange(outCome[spin], 1, 27):  // 41.5% probability
-                betLine[spin] = "watermelon";
+                betLine[spin] = "Watermelon";
                 watermelon++;
                 if (watermelon == 3) {
-                        playerMoney = playerMoney += betAmount * 5;
+                        playerMoney = playerMoney += betAmount;
                         playerMoneyText.text = "Money " + playerMoney.toString();
                     }
                 if (watermelon == 2) {
-                        playerMoney = playerMoney += betAmount * 1;
+                        playerMoney = playerMoney += betAmount;
                         playerMoneyText.text = "Money " + playerMoney.toString();
                     }
-                if (watermelon == 1) {
-                        playerMoney = playerMoney += betAmount * 0;
-                        playerMoneyText.text = "Money " + playerMoney.toString();
-                    }
+            
                 break;
             case checkRange(outCome[spin], 28, 37): // 15.4% probability
-                betLine[spin] = "grapes";
+                betLine[spin] = "Grapes";
                 grapes++;
                 if (grapes == 3){
-                playerMoney = playerMoney += betAmount * 10;
+                playerMoney = playerMoney += betAmount * 2;
                 playerMoneyText.text = "Money " + playerMoney.toString();
                 }
                 if (grapes == 2) {
-                    playerMoney = playerMoney += betAmount * 2;
-                    playerMoneyText.text = "Money " + playerMoney.toString();
-                }
-                if (grapes == 1) {
-                    playerMoney = playerMoney += betAmount * 0;
+                    playerMoney = playerMoney += betAmount * 1;
                     playerMoneyText.text = "Money " + playerMoney.toString();
                 }
                 break;
             case checkRange(outCome[spin], 38, 46): // 13.8% probability
-                betLine[spin] = "banana";
+                betLine[spin] = "Banana";
                 bananas++;
                 if (bananas == 3) {
-                    playerMoney = playerMoney += betAmount * 20;
+                    playerMoney = playerMoney += betAmount * 5;
                     playerMoneyText.text = "Money " + playerMoney.toString();
                 }
                 
                 else if (bananas == 2) {
-                    playerMoney = playerMoney += betAmount * 2;
-                    playerMoneyText.text = "Money " + playerMoney.toString();
-                }
-                else if (bananas == 1) {
-                    playerMoney = playerMoney += betAmount * 0;
+                    playerMoney = playerMoney += betAmount * 1;
                     playerMoneyText.text = "Money " + playerMoney.toString();
                 }
                 break;
             case checkRange(outCome[spin], 47, 54): // 12.3% probability
-                betLine[spin] = "orange";
+                betLine[spin] = "Orange";
                 oranges++;
                 if (oranges == 3) {
-                    playerMoney = playerMoney += betAmount * 30;
+                    playerMoney = playerMoney += betAmount * 10;
                     playerMoneyText.text = "Money " + playerMoney.toString();
                 }
 
                 else if (oranges == 2) {
-                    playerMoney = playerMoney += betAmount * 3;
-                    playerMoneyText.text = "Money " + playerMoney.toString();
-                }
-                else if (oranges == 1) {
-                    playerMoney = playerMoney += betAmount * 0;
+                    playerMoney = playerMoney += betAmount * 1;
                     playerMoneyText.text = "Money " + playerMoney.toString();
                 }
                 break;
             case checkRange(outCome[spin], 55, 59): //  7.7% probability
-                betLine[spin] = "cherry";
+                betLine[spin] = "Cherry";
                 cherries++;
                 if (cherries == 3) {
-                    playerMoney = playerMoney += betAmount * 40;
+                    playerMoney = playerMoney += betAmount * 12;
                     playerMoneyText.text = "Money " + playerMoney.toString();
                 }
 
                 else if (cherries == 2) {
-                    playerMoney = playerMoney += betAmount * 4;
-                    playerMoneyText.text = "Money " + playerMoney.toString();
-                }
-                else if (cherries == 1) {
-                    playerMoney = playerMoney += betAmount * 0;
+                    playerMoney = playerMoney += betAmount * 2;
                     playerMoneyText.text = "Money " + playerMoney.toString();
                 }
                 break;
             case checkRange(outCome[spin], 60, 62): //  4.6% probability
-                betLine[spin] = "bar";
+                betLine[spin] = "Bar";
                 bars++;
                 if (bars == 3) {
                     alert("You Won the $" + jackpot + " Jackpot!!");
@@ -231,15 +212,15 @@ function Reels() {
                 }
                 break;
             case checkRange(outCome[spin], 63, 64): //  3.1% probability
-                betLine[spin] = "bell";
+                betLine[spin] = "Bell";
                 bells++;
                 if (bells == 3) {
-                    playerMoney = playerMoney += betAmount * 75;
+                    playerMoney = playerMoney += betAmount * 15;
                     playerMoneyText.text = "Money " + playerMoney.toString();
                 }
 
                 else if (bells == 2) {
-                    playerMoney = playerMoney += betAmount * 10;
+                    playerMoney = playerMoney += betAmount * 5;
                     playerMoneyText.text = "Money " + playerMoney.toString();
                 }
                 else if (bells == 1) {
@@ -248,7 +229,7 @@ function Reels() {
                 }
                 break;
             case checkRange(outCome[spin], 65, 65): //  1.5% probability
-                betLine[spin] = "seven";
+                betLine[spin] = "Seven";
                 sevens++;
                 if (sevens == 3) {
                     playerMoney = playerMoney += betAmount * 100;
